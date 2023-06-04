@@ -10,6 +10,8 @@ void main() {
   );
 }
 
+
+
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -18,28 +20,9 @@ class MyApp extends StatefulWidget {
 
 }
 class _MyAppState extends State<MyApp> {
-  int counter = 0;
-  double h = 80;
-
-  Color appbarBg = Colors.amber;
-
-  late double w;
-
-  @override
-  void initState() {
-    super.initState();
-    w = h;
-    appbarBg = const Color(0xff314755);
-  }
-
-  void increase() {
-    setState(() {
-      counter++;
-    });
-  }
 
 
-
+int counter=0;
 @override
 Widget build(BuildContext context) {
   return Scaffold(
@@ -47,38 +30,68 @@ Widget build(BuildContext context) {
       backgroundColor: Colors.lightBlue,
       title: Text("Calc"),
       centerTitle: true,
-      leading: Icon(Icons.more),
+      leading: Icon(Icons.menu),
     ),
     body: Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           Row(
-              mainAxisSize: MainAxisSize.min,
 
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 Container(
-                  height: 50,
-                  width: 150,
-                  margin: EdgeInsets.all(20),
-                  decoration: BoxDecoration(
-                    color: Colors.lightBlue,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: Text("-2",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                  margin: EdgeInsets.all(50),
+                  child: Text("$counter",style: TextStyle(
+                    color: Colors.grey,
+                    fontSize: 80,
+                    fontWeight: FontWeight.bold,
                   )
                   ),
                   alignment: Alignment.center,
                 ),
-                Container(
+              ]
+          ),
+          Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                InkWell(
+                  onTap: () {
+                    setState(() {
+                    counter-=2;
+                    print("$counter");
+                    });
+                  },
+                  child: Container(
+                    height: 50,
+                    width: 150,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.lightBlue,
+                      borderRadius: BorderRadius.circular(15),
+                    ),
+                    child: Text("-2",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    )
+                    ),
+                    alignment: Alignment.center,
+                  ),
+                ),
+                InkWell(
+                    onTap: () {
+                      setState(() {
+                        counter+=2;
+                        print("$counter");
+                      });
+                    },
+                 child: Container(
                   height: 50,
                   width: 150,
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Colors.lightBlue,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Text("+2",style: TextStyle(
                     fontSize: 30,
@@ -88,19 +101,28 @@ Widget build(BuildContext context) {
                   ),
                   alignment: Alignment.center,
                 ),
+                ),
               ]
           ),
           Row(
               mainAxisSize: MainAxisSize.min,
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
+                InkWell(
+                    onTap: () {
+                      setState(() {
+                        counter-=4;
+                        print("$counter");
+                      });
+                    },
+
+                    child: Container(
                   height: 50,
                   width: 150,
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Colors.lightBlue,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Text("-4",style: TextStyle(
                     fontSize: 30,
@@ -110,13 +132,21 @@ Widget build(BuildContext context) {
                   ),
                   alignment: Alignment.center,
                 ),
-                Container(
+                ),
+                InkWell(
+                    onTap: () {
+                      setState(() {
+                        counter+=4;
+                        print("$counter");
+                      });
+                    },
+                child: Container(
                   height: 50,
                   width: 150,
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Colors.lightBlue,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Text("+4",style: TextStyle(
                     fontSize: 30,
@@ -126,18 +156,26 @@ Widget build(BuildContext context) {
                   ),
                   alignment: Alignment.center,
                 ),
+                ),
               ]
           ),
           Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Container(
+                InkWell(
+                    onTap: () {
+                      setState(() {
+                        counter=0;
+                        print("$counter");
+                      });
+                    },
+                child: Container(
                   height: 50,
                   width: 150,
-                  margin: EdgeInsets.all(20),
+                  margin: EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: Colors.lightBlue,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Text("Clear",style: TextStyle(
                     color: Colors.white,
@@ -146,11 +184,10 @@ Widget build(BuildContext context) {
                   )
                   ),
                   alignment: Alignment.center,
-
+                ),
                 ),
               ]
           ),
-
         ],
       ),
     ),
