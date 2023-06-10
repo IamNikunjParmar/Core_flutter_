@@ -28,142 +28,589 @@ class _MyAppState extends State<MyApp> {
         backgroundColor: Colors.white,
       ),
     body: Align(
+      alignment: Alignment.center,
       child: SingleChildScrollView(
-        scrollDirection: Axis.horizontal,
-        physics: BouncingScrollPhysics(),
-        child: Row(
+        scrollDirection: Axis.vertical,
+        child: Column(
           children: [
-            Align(
-              alignment: Alignment.topLeft,
-              child: Container(
-                height: 100,
-                width: 100,
-                alignment: Alignment.center,
-                margin: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade200,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 5,
-                      color: Colors.grey.shade500,
-                      offset: Offset(0,10),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: BouncingScrollPhysics(),
+              child: Row(
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                            color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-                child: Text("+",
-                  style: TextStyle(
-                      fontSize: 35,
-                      color: Colors.grey.shade600
+                    child: SizedBox(
+                      child: Icon(Icons.add,
+                        size: 35,
+                      color: Colors.grey.shade600,
+                      ),
+                    ),
                   ),
-                ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.topCenter,
-              child: Container(
-                height: 100,
-                width: 100,
-                alignment: Alignment.center,
-                margin: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade200,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 5,
-                      color: Colors.grey.shade500,
-                      offset: Offset(0,10),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-                child: Icon(Icons.account_circle_rounded,
-                size: 30,
-                  color: Colors.grey.shade600,
-                ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.topRight,
-              child: Container(
-                height: 100,
-                width: 100,
-                alignment: Alignment.center,
-                margin: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade200,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 5,
-                      color: Colors.grey.shade500,
-                      offset: Offset(0,10),
+                    child: SizedBox(
+                      child: Icon(Icons.account_circle_rounded,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
                     ),
-                  ],
-                ),
-                child: Text("<",
-                  style: TextStyle(
-                      fontSize: 35,
-                      color: Colors.grey.shade600
                   ),
-                ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.topLeft,
-              child: Container(
-                height: 100,
-                width: 100,
-                alignment: Alignment.center,
-                margin: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade200,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 5,
-                      color: Colors.grey.shade500,
-                      offset: Offset(0,10),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-                child: Text(">",
-                  style: TextStyle(
-                      fontSize: 35,
-                      color: Colors.grey.shade600
-                  ),
-                ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.topRight,
-              child: Container(
-                height: 100,
-                width: 100,
-                alignment: Alignment.center,
-                margin: EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  color: Colors.grey.shade200,
-                  borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 5,
-                      color: Colors.grey.shade500,
-                      offset: Offset(0,10),
+                    child: SizedBox(
+                      child: Icon(Icons.access_alarms_rounded,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
                     ),
-                  ],
-                ),
-                child: Text("?",
-                  style: TextStyle(
-                      fontSize: 35,
-                      color: Colors.grey.shade600
                   ),
-                ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.access_alarms_rounded,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: BouncingScrollPhysics(),
+              child: Row(
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                            color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.accessibility_new,
+                        size: 35,
+                      color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.accessible_forward_outlined,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.ac_unit,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.account_balance_sharp,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: BouncingScrollPhysics(),
+              child: Row(
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                            color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.account_balance_wallet,
+                        size: 35,
+                      color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.cabin,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.dangerous_sharp,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.table_chart_sharp,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: BouncingScrollPhysics(),
+              child: Row(
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                            color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.east_rounded,
+                        size: 35,
+                      color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.group_remove,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.hardware,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.nature,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: BouncingScrollPhysics(),
+              child: Row(
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                            color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.verified_rounded,
+                        size: 35,
+                      color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.sanitizer,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.adb_outlined,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.mail,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              physics: BouncingScrollPhysics(),
+              child: Row(
+                children: [
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                            color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.hdr_plus_rounded,
+                        size: 35,
+                      color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.offline_bolt,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.join_left_sharp,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                  Container(
+                    height: 120,
+                    width: 120,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.grey.shade200,
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          blurRadius: 5,
+                          color:Colors.grey.shade400,
+                          offset: Offset(0,10),
+                        ),
+                      ],
+                    ),
+                    child: SizedBox(
+                      child: Icon(Icons.warning,
+                        size: 35,
+                        color: Colors.grey.shade600,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
           ],
         ),
-
       ),
     ),
       backgroundColor: Colors.grey.shade300,
