@@ -1,16 +1,4 @@
 # appmania_pr_4
 
-A new Flutter project.
+<img src = "https://github.com/nikunjparmar21899/Core_flutter_/assets/121547318/1526d40c-c5b1-47d3-8906-9166d766f57" width = "300">
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
