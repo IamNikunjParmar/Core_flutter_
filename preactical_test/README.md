@@ -1,16 +1,11 @@
 # preactical_test
 
-A new Flutter project.
+<img src = "https://github.com/nikunjparmar21899/Core_flutter_/assets/121547318/24b44b48-153e-4566-84bc-f447030a968d" width = "300">
 
-## Getting Started
+<img src = "https://github.com/nikunjparmar21899/Core_flutter_/assets/121547318/76fd9025-483c-4c00-9e22-47303aebb3ee" width = "300">
 
-This project is a starting point for a Flutter application.
+<img src = "https://github.com/nikunjparmar21899/Core_flutter_/assets/121547318/b0d11be3-dfaf-4a6f-a9e7-b608d69625a3" width = "300">
 
-A few resources to get you started if this is your first Flutter project:
+<img src = "https://github.com/nikunjparmar21899/Core_flutter_/assets/121547318/f0b62a88-de39-4591-a8ac-b8d06ac7803e" width = "300">
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<
